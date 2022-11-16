@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список страниц</title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<style>
+  .list-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    text-align: center;
+  }
+
+  .list-pages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .list-pages__item {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .list-pages__item-name {}
+
+  .list-pages__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 700px) {
+    .list-pages__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+</style>
+
+<body class="list-pages">
+  <ul class="list-pages__list">
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="main.html" target="_blank">
+        <p class="list-pages__item-name">Пример резюме программиста</p>
+      </a>
+    </li>
+
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="profession-resumes.html" target="_blank">
+        <p class="list-pages__item-name">Примеры резюме по профессиям</p>
+      </a>
+    </li>
+
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="transmittal-latter.html" target="_blank">
+        <p class="list-pages__item-name">Сопроводительное письмо к резюме</p>
+      </a>
+    </li>
+
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="inner-resume.html" target="_blank">
+        <p class="list-pages__item-name">Титул внутренней страницы сайта резюме</p>
+      </a>
+    </li>
+
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="full-latter.html" target="_blank">
+        <p class="list-pages__item-name">Сопроводительное письмо программиста</p>
+      </a>
+    </li>
+
+    <li class="list-pages__item">
+      <a class="list-pages__item-link" href="creation-resume.html" target="_blank">
+        <p class="list-pages__item-name">Как создать резюме на работу?</p>
+      </a>
+    </li>
+  </ul>
+
+</body>
+
+</html>
